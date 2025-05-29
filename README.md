@@ -1,13 +1,15 @@
 🎓 Student Admissions Automation with Power Automate
 Designed and deployed a Power Automate workflow that captures student inquiries in SharePoint, routes records for approval, then automatically generates and emails admission documents to administrators, ensuring accurate data synchronization and streamlined onboarding.
 
+
+
 This project features a multi-stage Power Automate workflow designed to streamline and optimize the student admissions process:
 
-📝 Capture: Student inquiry data collected via online forms and stored in SharePoint Lists
+STEP 1: 📝 Capture: Student inquiry data collected via online forms and stored in SharePoint Lists
 
-✅ Approval: Automated approval workflows update records and synchronize approved data from the intake list to the enrollment list, ensuring data accuracy and efficient onboarding
+STEP 2: ✅ Approval: Automated approval workflows update records and synchronize approved data from the intake list to the enrollment list, ensuring data accuracy and efficient onboarding
 
-📧 Automation: Generation and email delivery of intake documents sent directly to the Admissions Department
+STEP 3: 📧 Automation: Generation and email delivery of intake documents sent directly to the Admissions Department
 
 
 
