@@ -1,72 +1,69 @@
-🎓 Student Admissions Automation with Power Automate
-Designed and deployed a Power Automate workflow that captures student inquiries in SharePoint, routes records for approval, then automatically generates and emails admission documents to administrators, ensuring accurate data synchronization and streamlined onboarding.
+# 🎓 Student Admissions Automation with Power Automate
 
+---
 
+## 🚀 Project Summary
 
-This project features a multi-stage Power Automate workflow designed to streamline and optimize the student admissions process:
+### Objective  
+Develop a multi-stage Power Automate workflow to streamline the student admissions process by automating data capture, approval routing, document generation, and communication, thereby improving data accuracy and operational efficiency.
 
-STEP 1: 📝 Capture: Student inquiry data collected via online forms and stored in SharePoint Lists
+### Key Features  
+- **Data Capture:** Collect student inquiry data via online forms and store it securely in SharePoint Lists.  
+- **Approval Workflow:** Route student records through an automated approval process, syncing only approved entries to the enrollment list.  
+- **Document Automation:** Automatically generate and email formatted Word documents containing student intake details to the Admissions Department.  
 
-STEP 2: ✅ Approval: Automated approval workflows update records and synchronize approved data from the intake list to the enrollment list, ensuring data accuracy and efficient onboarding
+---
 
-STEP 3: 📧 Automation: Generation and email delivery of intake documents sent directly to the Admissions Department
+## 🏗️ Automation Workflow Architecture
 
+The project consists of three main Power Automate flows working together:
 
+1. **Student Inquiry to MS List + Email**  
+   - Triggered by HTTP request from intake forms  
+   - Captures and stores student data in Microsoft Lists  
+   - Generates Word documents and emails them to Admissions  
 
-FLOW 1️⃣: Student Inquiry Info to MS List + Email
-This Power Automate flow streamlines the collection, storage, and forwarding of student information during the admissions process. Triggered by an HTTP request (from an intake form or external system), it automates the following tasks:
+2. **Sync List on Approval**  
+   - Activated when student records are approved  
+   - Synchronizes approved entries between SharePoint lists  
+   - Maintains data consistency across intake and enrollment  
 
-📝 Collect: Captures student details submitted via an online form
+3. **Student Intake to Admissions**  
+   - Combines data capture and document automation  
+   - Ensures seamless, error-free transmission of admission documents  
 
-💾 Store: Saves the information in a structured Microsoft List
+---
 
-📄 Generate: Creates a formatted Word document populated with the student's data
+## 📖 Detailed Workflow Descriptions
 
-📧 Send: Emails the document via institutional email to the Admissions Department for further processing
+### FLOW 1️⃣: Student Inquiry Info to MS List + Email  
+- 📝 Collects student details via online form submissions  
+- 💾 Stores data in Microsoft Lists for structured management  
+- 📄 Generates formatted Word documents with student information  
+- 📧 Sends documents via institutional email to Admissions  
 
-This automation reduces manual data handling, improves data consistency, and accelerates the enrollment workflow.
+### FLOW 2️⃣: Sync List on Approval – Information to Enrollment  
+- 🔔 Triggers on approval of student record in SharePoint  
+- 📖 Reads data from the **Information Sheet** list  
+- ✍️ Updates or creates matching entries in the **Enrollment Sheet** list  
+- 🔄 Ensures accurate synchronization and data integrity  
 
+### FLOW 3️⃣: Student Intake to Admissions  
+- 📝 Captures student inquiry data from external sources  
+- 💾 Stores data in SharePoint Lists  
+- 📄 Generates admission intake documents via Word Online  
+- 📧 Automates email delivery to Admissions Department  
 
+---
 
-FLOW 2️⃣: Sync List on Approval – Information to Enrollment
-This Power Automate flow automates the synchronization of student data between two SharePoint lists — Information Sheet and Enrollment Sheet — based on approval status. It ensures that only approved student records are transferred, maintaining data integrity and streamlining the enrollment process.
+## 🧩 Technologies Used  
+- **Microsoft Power Automate** – Workflow orchestration and automation  
+- **SharePoint Online** – Data storage and list management  
+- **Word Online (Business)** – Dynamic document generation  
+- **Office 365 Outlook** – Automated email sending  
 
-🚀 What It Does
-Once a student record is approved:
+---
 
-🔔 Triggers automatically upon approval of a SharePoint list item
+## 🌟 About Me
 
-📖 Reads data from the Information Sheet list
-
-✍️ Creates or updates a corresponding entry in the Enrollment Sheet list
-
-🔄 Ensures data consistency between intake and enrollment records
-
-🧩 Technologies Used
-SharePoint Online – source and destination lists
-
-Microsoft Power Automate – workflow orchestration
-
-
-
-FLOW 3️⃣: 🎓 Student Intake to Admissions – Power Automate Flow
-This Power Automate flow streamlines the collection, storage, and forwarding of student information during the admissions process. It reduces manual data handling, improves data consistency, and accelerates the enrollment workflow.
-
-🚀 What It Does
-Triggered by an HTTP request (typically from an online intake form or external system), this flow automates the following tasks:
-
-📝 Collects student details submitted via an online form
-
-💾 Stores the information in a structured Microsoft List
-
-📄 Generates a formatted Word document populated with the student's data
-
-📧 Sends the document via institutional email to the Admissions Department for further processing
-
-🧩 Technologies Used
-SharePoint Online – for structured data storage
-
-Word Online (Business) – for document generation
-
-Office 365 Outlook – for automated email delivery
-
+Hi! I'm **Parth**, an experienced Data Professional passionate about leveraging Microsoft 365 tools to build efficient, scalable workflows that reduce manual effort and increase operational accuracy in education and business processes.
